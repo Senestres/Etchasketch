@@ -1,0 +1,21 @@
+:root {
+--size: 10px;
+--number: 100;
+}
+
+#grid {
+    grid-template-columns: repeat(var(--number), var(--size));
+    display: grid;
+}
+
+.gridSquare {
+    height: var(--size);
+    width: var(--size);
+    margin: none;
+    background-color: black;
+    border-style: dotted black;
+}
+
+.mouseOver {
+    background-color: red;
+}
