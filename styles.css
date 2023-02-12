@@ -3,19 +3,44 @@
 --number: 100;
 }
 
+body {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(222, 240, 255);
+}
+
+.sidebar {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+}
+
 #grid {
     grid-template-columns: repeat(var(--number), var(--size));
     display: grid;
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
 }
 
 .gridSquare {
     height: var(--size);
     width: var(--size);
     margin: none;
-    background-color: black;
-    border-style: dotted black;
+    background-color: white;
 }
 
 .mouseOver {
     background-color: red;
 }
+
+input[type="radio"] {
+    display: table-cell;
+    vertical-align: middle
+  }
