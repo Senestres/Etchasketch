@@ -61,7 +61,6 @@ function addHover() {
 // radiobuttons
 function update() {
     tool = document.querySelector('input[name="tool"]:checked').value;
-    console.log(tool)
 }
 
 // Create a random color
